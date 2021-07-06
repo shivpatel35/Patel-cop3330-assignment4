@@ -1,0 +1,60 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App{
+    main()
+    start()
+}
+
+class controller implements ToDoLists{
+
+addListclicked()
+removeListclicked()
+editTitleofListclicked()
+addItemtoListclicked()
+removeItemfromListclicked()
+editDescriptionofitemclicked()
+editDuedateofitemclicked()
+markItemclicked()
+displayAlloflistclicked()
+displayIncompleteclicked()
+displayCompletedclicked()
+saveItemstostorageclicked()
+saveAllliststostorageclicked()
+loadListclicked()
+loadMultiplelistsclicked()
+
+
+
+
+
+}
+
+class ToDoListManager{
+
+string title
+string d_date
+ArrayList entries
+
+addList()
+removeList()
+addItem()
+removeItem()
+editDescriptionofitem()
+editDuedateofitem()
+markItemclicked()
+displayAlloflist()
+displayCompleted()
+displayIncompleted()
+saveItemstostorage()
+saveAllListstostorage()
+loadList()
+loadMultiplelists()
+
+}
+
+javafx.Application <|--App
+
+App - controller
+
+@enduml
