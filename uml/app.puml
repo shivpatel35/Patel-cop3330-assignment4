@@ -24,10 +24,6 @@ saveAllliststostorageclicked()
 loadListclicked()
 loadMultiplelistsclicked()
 
-
-
-
-
 }
 
 class ToDoListManager{
